@@ -34,6 +34,12 @@
         </li>
         {{-- @endrole --}}
 
+         {{-- @role('managers') --}}
+         <li>
+            <a href="/dashboard/permission"><i data-feather="layers" class="align-self-center menu-icon"></i><span>Permissions</span></a>
+            </li>
+      {{-- @endrole --}}
+
 
         </ul>
 
