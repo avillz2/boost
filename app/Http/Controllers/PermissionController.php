@@ -121,7 +121,7 @@ class PermissionController extends Controller
     {
         $this->permission = Permission::find($id);
         if (!$this->permission->removable) {
-            return redirect('permission')->with('success','Perission can not be  deleted.');
+            return redirect('permission')->with('success','Permission can not be  deleted.');
         }
 
         $this->permission->delete();
