@@ -85,7 +85,7 @@
                 <div class="container-fluid">
 
 
-                    {{-- @include('inc.messages') --}}
+                    @include('inc.messages')
                     @yield('content')
 
 

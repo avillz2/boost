@@ -41,10 +41,18 @@ Route::get('/f', function () {
 //     'uses' => 'App\Http\Controllers\UsersController',
 // ]);
 
-Route::resource('/dashboard/users', 'App\Http\Controllers\UsersController');
+Route::resource('/dashboard/users', 'App\Http\Controllers\UserController');
 Route::resource('/dashboard/blog', 'App\Http\Controllers\BlogController');
 Route::resource('/dashboard/roles', 'App\Http\Controllers\RolesController');
 Route::resource('/dashboard/permission', 'App\Http\Controllers\PermissionController');
+
+
+
+Route::get('/dashboard/profile', 'App\Http\Controllers\UserController@profile')->name('/dashboard/profile');
+
+Route::post('/dashboard/postprofile/{id}', 'App\Http\Controllers\UserController@postprofile')->name('/dashboard/postprofile');
+
+Route::post('/dashboard/updatelogin/{id}', 'App\Http\Controllers\UserController@updatelogin')->name('/dashboard/updatelogin');
 
 Auth::routes();
 

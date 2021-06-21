@@ -40,6 +40,17 @@
             </li>
       {{-- @endrole --}}
 
+             {{-- @role('managers') --}}
+        <li>
+            <a href="/dashboard/users"><i data-feather="layers" class="align-self-center menu-icon"></i><span>Users</span></a>
+            </li>
+            {{-- @endrole --}}
+
+             {{-- @role('managers') --}}
+        <li>
+            <a href="/dashboard/profile"><i data-feather="layers" class="align-self-center menu-icon"></i><span>Setting</span></a>
+            </li>
+            {{-- @endrole --}}
 
         </ul>
 

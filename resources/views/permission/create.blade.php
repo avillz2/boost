@@ -1,4 +1,4 @@
-@extends('layouts.app2')
+@extends('layouts.app1')
 
 @section('content')
 <div class="row">
@@ -21,7 +21,7 @@
     </div><!--end col-->
 </div><!--end row-->
 <!-- end page title end breadcrumb -->
-<div class="row justify-content-center">
+{{-- <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card">
             <div class="card-header">{{ __('Dashboard') }}</div>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <div class="card card-primary">
     <div class="card-header">
         <h3 class="card-title">Add new Permission</h3>
